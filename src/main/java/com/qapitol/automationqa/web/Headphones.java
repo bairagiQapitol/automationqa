@@ -1,5 +1,7 @@
 package com.qapitol.automationqa.web;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Before;
 import org.openqa.selenium.By;
@@ -18,6 +20,7 @@ import java.util.stream.Collectors;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class Headphones {
+    Logger log = LogManager.getLogger(getClass());
     String url;
     WebDriver driver;
 
